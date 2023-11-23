@@ -17,9 +17,11 @@ const userSchema = new mongoose.Schema({
     },
     avatar:{
         type:String,
-        default: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Ww0_0HuoLga23BfZT9futCOWfP5Gy_FdgbYsHUk&s"
+        default: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     },
-},{timestamps: true});
+},
+{timestamps: true}
+);
 
 const User = mongoose.model('User', userSchema);
 
